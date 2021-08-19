@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title> Christan Williams </title>
+    <link rel="stylesheet" type="text/css" href="app/scss/home_styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="navbar">
+
+      <ul>
+         <li style="float:left"><a href="#top">Christan Williams</a></li>
+         <li><a href="#contact">Contact</a></li>
+         <li><a href="#portfolio">Projects</a></li>
+         <li><a href="#about">About</a></li>
+     </ul>
+
+
+    </div>
+
+    <div id ="top">
+
+
+       <img src= "images/thumb.png">
+
+       <h2> Christan Williams </h2>
+
+       <h3> Front End Developer & Video Editor </h3>
+
+
+    </div>
+   <div id = "over_about">
+    <center>
+      <h1> ABOUT ME </h1>
+   </center>
+
+    <div id ="about">
+
+      <img src = "images/me1.jpg.jpg" >
+
+      <p> When, I was child I loved playing with legos. I found freedom in that medium, it 
+        just screamed "Hey take these pieces and make what you want!" As an adult I no longer
+        play with legos, instead I play with code. My name is Christan Williams and I'm a 
+        passionate Front End Web Developer skilled in Html, CSS, JavaScript, and much more! I'm eager 
+        and excited work with you and help you build your dreams into reality. To learn more about my
+        skill-set and experience <a href="images/Christan_Williams.PDF" target="_blank" style="color: red;" >click here</a> to see my resume.
+      </p>
+
+      
+   </div>
+
+    
+   </div>
+
+
+  <div id = "over_portfolio">
+      <center>
+          <h1> PROJECTS </h1>
+       </center>
+
+    <div id ="portfolio">
+
+      
+      <a href="http://www.drgriffs.com/" target="_blank" class ="project_card" id ="card_1">
+
+        <img src="images/drgriffs_site.JPG" alt="project" style="width:100%; height:300px;">
+
+        <div class="card_descript">
+         <h4><b> Dr.Griffs.com</b> </h4>
+         <p> This project is a website I built for a client for his personal brand and DJing business. 
+         </p>
+
+        </div>
+
+
+      </a>
+
+      <a href="https://www.w3schools.com" target="_blank"  class ="project_card" id ="card_2">
+
+        <img src="images/thumb.png" alt="project" style="width:100%;  height:300px;">
+
+        <div class="card_descript">
+         <h4><b> Project Name</b> </h4>
+         <p> This project is about blah blah blah</p>
+
+        </div>
+
+
+      </a>
+
+      <a href="https://www.w3schools.com" target="_blank" class ="project_card" id ="card_3">
+
+        <img src="images/thumb.png" alt="project" style="width:100%; height: 300px;">
+
+        <div class="card_descript">
+         <h4><b> Project Name</b> </h4>
+         <p> This project is about blah blah blah</p>
+
+        </div>
+        
+
+      </a>
+
+      <div class="custom_buttons">
+
+     <!-- <a href="https://codepen.io/your-work"> CodePen </a> -->
+
+      <a href="https://github.com/ChristanWill123?tab=repositories" target="_blank"> GIT HUB</a>
+
+    </div>
+
+
+   </div>
+
+  </div>
+
+  
+
+
+   <div id="contact">
+
+    <center>
+      <h1> CONTACT </h1>
+   </center>
+   
+    <form  id="contactForm" name="sentMessage" novalidate="novalidate">
+      <label for="fname">Name/Business</label>
+      <input type="text" id="name" name="firstname" placeholder="Your name..">
+  
+      <label for="lname">Email</label>
+      <input type="text" id="email" name="lastname" placeholder="Email..">
+  
+      
+      <label for="subject">Subject</label>
+      <textarea id="message" name="subject" placeholder="How can I help you.." style="height:200px"></textarea>
+
+      <div id="success"></div>
+      <input  id = "sendMessageButton" type="submit" value="Submit">
+    </form>
+
+
+    
+
+   </div>
+
+   <div id = "footer">
+       <p> "EVERYTHING YOU CAN IMAGINE IS REAL." - Picasso </p>
+   </div>
+
+
+
+
+
+
+      <script type="text/javascript" src="app/js/general.js"></script>
+
+      <!-- Contact Form JS-->
+      <script src="app/js/mail/jqvalidation.js"></script>
+      <script src="app/js//mail/contact.js"></script>
+
+  </body>
+</html>

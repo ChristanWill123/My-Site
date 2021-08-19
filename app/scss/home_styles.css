@@ -1,0 +1,253 @@
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  line-height: 1.3;
+  margin: 0px;
+  padding: 0px;
+}
+
+body h1, body h2, body h3 {
+  font-family: Kiwi Maru;
+  color: white;
+}
+
+.navbar ul {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  -webkit-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;
+}
+
+.navbar li {
+  float: right;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 24px 20px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.navbar li a:hover:not(.active) {
+  background-color: #111;
+}
+
+#top {
+  background: #e95454;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+#top img {
+  width: 400px;
+  height: 400px;
+  margin-top: 100px;
+  border-radius: 50%;
+}
+
+/* 
+ for this section to make it more 
+ mobile friendly you can use a 
+ media query and change the 
+ display to something like "inline-block"
+ and apply padding to give space to the 
+ projects scrolling down!
+
+
+*/
+#over_portfolio {
+  background: #e95454;
+  margin-top: -30px;
+}
+
+#over_portfolio h1 {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+#over_portfolio #portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+#over_portfolio #portfolio a {
+  color: black;
+  text-decoration: none;
+}
+
+#over_portfolio #portfolio .custom_buttons {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#over_portfolio #portfolio .custom_buttons a {
+  -webkit-box-shadow: 0px 10px 14px -7px #276873;
+          box-shadow: 0px 10px 14px -7px #276873;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #599bb3), to(#408c99));
+  background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+  background-color: #599bb3;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 13px 32px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #3d768a;
+}
+
+#over_portfolio #portfolio .custom_buttons a:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #408c99), to(#599bb3));
+  background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+  background-color: #408c99;
+}
+
+#over_portfolio #portfolio .custom_buttons a:active {
+  position: relative;
+  top: 1px;
+}
+
+.project_card {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 31%;
+  max-height: 500px;
+  text-align: center;
+  background: whitesmoke;
+  border-radius: 5px;
+}
+
+.card_descript p {
+  padding: 5px;
+}
+
+/* 
+ So for the mobile modification is that will have
+ to create a media query to make img above content
+
+*/
+#over_about {
+  background: #5599d1;
+  margin-top: -30px;
+}
+
+#over_about h1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#over_about #about {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'content img';
+}
+
+#over_about #about p {
+  color: whitesmoke;
+  margin-left: 50px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: content;
+}
+
+#over_about #about img {
+  margin-left: 5%;
+  width: 80%;
+  margin-bottom: 25px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: img;
+}
+
+#contact {
+  margin-top: -60px;
+  background: #5599d1;
+  border-radius: 5px;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 50px;
+}
+
+#contact h1 {
+  padding-top: 20px;
+}
+
+#contact input[type=text], #contact select, #contact textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+#contact input[type=submit] {
+  -webkit-box-shadow: 0px 10px 14px -7px #276873;
+          box-shadow: 0px 10px 14px -7px #276873;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #599bb3), to(#408c99));
+  background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+  background-color: #599bb3;
+  border-radius: 8px;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 13px 32px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #3d768a;
+  border: 0px solid black;
+}
+
+#contact input[type=submit]:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #408c99), to(#599bb3));
+  background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+  background-color: #408c99;
+}
+
+#contact input[type=submit]:active {
+  position: relative;
+  top: 1px;
+}
+
+#footer {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+}
+
+#footer p {
+  padding: 15px;
+}
+/*# sourceMappingURL=home_styles.css.map */

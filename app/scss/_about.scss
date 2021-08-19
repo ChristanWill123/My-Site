@@ -1,0 +1,41 @@
+/* 
+ So for the mobile modification is that will have
+ to create a media query to make img above content
+
+*/
+
+
+#over_about{
+    background: #5599d1;
+    margin-top: -30px;
+
+   h1{
+       padding-top: 20px;
+       padding-bottom: 20px;
+   }
+
+   #about{
+       display:grid;
+       grid-template-areas: 'content img';
+    
+    
+    
+     p{
+          color:whitesmoke;
+          margin-left: 50px;
+          grid-area: content;
+        
+      }
+
+    img{
+        margin-left: 5%;
+        width:80%;
+        margin-bottom: 25px;
+        grid-area: img;
+
+    }
+
+}
+
+}
+
